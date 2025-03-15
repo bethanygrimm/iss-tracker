@@ -50,6 +50,7 @@ Once the container is running in the background, the following commands may be r
 <li><code>curl localhost:5000/[epoch]/position</code></li>
     <ul>
     <li>[epoch] must be a string, the epoch queried. This route returns the location information for the epoch requested: latitude, longitude, altitude, and approximate geographic location (with "none" meaning the ISS is above the ocean). This must be in the format %Y-%jT%H:%M:%S.%fZ</li>
+    </ul>
 <li><code>curl localhost:5000/now</code></li>
     <ul>
     <li>This route returns state vectors, instantaneous speed, and position data for the epoch closest to the current time.</li>
